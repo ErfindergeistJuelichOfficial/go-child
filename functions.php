@@ -4,14 +4,14 @@
 // https://developer.wordpress.org/themes/advanced-topics/child-themes/
 function theme_enqueue_styles()
 {
-   $parenthandle = 'parent-style'; 
+   $parenthandle = 'go-child-style'; 
    $theme = wp_get_theme();
 
    wp_enqueue_style(
       $parenthandle,
       get_template_directory_uri() . '/style.css',
-      array(),  // if the parent theme code has a dependency, copy it to here
-      $theme->parent()->get('Version')
+      array('go-style'),  // if the parent theme code has a dependency, copy it to here
+      $theme->get('Version')
    );
 
    wp_enqueue_style(
