@@ -23,4 +23,7 @@ jobs:
         local-dir: ./
         protocol: ftps
         state-name: .ftp-deploy-sync-go-child-theme-state.json
-        exclude: ./github
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/.github*
