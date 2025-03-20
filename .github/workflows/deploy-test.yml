@@ -2,7 +2,8 @@ name: 🚀 Deploy Erfindergeist Go-Child-Theme-Test
 
 on:
   push:
-    branches:    
+    branches:  
+      - '*'  
       - '!main'   # excludes main
 
 jobs:
