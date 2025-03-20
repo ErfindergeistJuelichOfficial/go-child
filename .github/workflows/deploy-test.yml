@@ -1,0 +1,26 @@
+name: 🚀 Deploy Erfindergeist Go-Child-Theme-Test
+
+on:
+  push:
+    branches:    
+      - '!main'   # excludes main
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy at https://spielwiese.erfindergeist.org/
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: erfindergeist.org
+        username: ${{ secrets.FTP_USERNAME_TEST }}
+        password: ${{ secrets.FTP_PASSWORD_TEST }}
+        local-dir: ./dist/
+        protocol: ftps
+        state-name: .ftp-deploy-sync-go-child-theme-state.json
+        exclude: |
