@@ -1,4 +1,4 @@
-name: 🚀 Deploy Erfindergeist Go-Child-Theme-Test
+name: 🚀 TEST Go-Child-Theme Deploy
 
 on:
   push:
