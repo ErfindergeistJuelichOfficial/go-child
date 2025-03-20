@@ -12,129 +12,127 @@
 }
 
 body {
- color: var(--egj-black)
+  color: var(--egj-black);
 }
 
 a {
- color: var(--egj-black)
-}
-
-a:active, a:hover {
- color: var(--egj-black) 
-}
-
-
-h1, h2, h3, h4, h5, {
-  font-style: normal !important;
-  font-weight: 700 !important;
   color: var(--egj-black);
 }
 
+a:active,
+a:hover {
+  color: var(--egj-black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  /* font-style: normal !important;
+  font-weight: 700 !important; */
+  color: var(--egj-black);
+}
 
 wp-block-latest-posts__post-title {
-  color: var(--egj-black)
+  color: var(--egj-black);
 }
 
-li .menu-item  {
-  color: var(--egj-white)
+li .menu-item {
+  color: var(--egj-white);
 }
 
-.header__navigation a  {
-  color: var(--egj-black)
+.header__navigation a {
+  color: var(--egj-black);
 }
 
-body, a{
-	    text-transform: unset !important;
-} 
+body,
+a {
+  text-transform: unset !important;
+}
 
 .alignwide {
   color: var(--egj-black);
-	margin-bottom: 4vh;
-	margin-top: 4vh;
+  margin-bottom: 4vh;
+  margin-top: 4vh;
 }
 
-
-
-.wp-block-latest-posts__post-title, div.wp-block-coblocks-posts__content a {
-	font-size: 1.2rem;
+.wp-block-latest-posts__post-title,
+div.wp-block-coblocks-posts__content a {
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
 .button-full-width {
-	width: 100%
+  width: 100%;
 }
 
-
-
-p, .wp-block-coblocks-posts__excerpt {
-	color: black;
+p,
+.wp-block-coblocks-posts__excerpt {
+  color: black;
 }
 
 cite {
-	color: #159989 !important;
+  color: #159989 !important;
 }
 
 blockquote p {
-	font-size: 1.2rem !important;
+  font-size: 1.2rem !important;
 }
 
 .post__thumbnail {
-	display: none;
+  display: none;
 }
 
 .wp-block-coblocks-post-carousel__image {
-	display: none;
+  display: none;
 }
 
-
-
 .wp-block-coblocks-posts__content {
-	margin-top: unset;
-
+  margin-top: unset;
 }
 
 .egj-member {
-	text-align: center;
-/* 	 about us not clickable */
-	pointer-events: none;
+  text-align: center;
+  /* 	 about us not clickable */
+  pointer-events: none;
 }
 
 /* Angebote und Nachfrage Services */
 .wp-block-coblocks-service {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	margin-bottom: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 1rem;
 }
 
 .wp-block-coblocks-service:last-child {
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .wp-block-coblocks-service__content {
-	padding: 10px;
+  padding: 10px;
 }
 
 @media only screen and (min-width: 768px) {
-   .frontsiteContainer {
+  .frontsiteContainer {
+    background-image: url("/wp-content/uploads/2022/07/Erifindergeist-Juelich-Vorbilder-01-01-scaled.jpg");
 
-      background-image: url("/wp-content/uploads/2022/07/Erifindergeist-Juelich-Vorbilder-01-01-scaled.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
 
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 100% ;
-   }
-	
-	.frontLogo {
+  .frontLogo {
     padding: 119px;
     height: 630px;
-	}
+  }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-   .frontsiteContainer {
-       background-image: unset;
+  .frontsiteContainer {
+    background-image: unset;
   }
-	
-	.frontLogo {
-	 	width: 300px;	
-	}
+
+  .frontLogo {
+    width: 300px;
+  }
 }
