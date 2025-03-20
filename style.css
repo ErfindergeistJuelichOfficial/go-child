@@ -112,6 +112,57 @@ blockquote p {
   padding: 10px;
 }
 
+/* Inclusion START */
+
+.wp-element-button {
+
+	border-color: var(--wp--preset--color--primary) !important;
+	border-width: 2px;
+	border-style: solid;
+	color: black;
+	background-color: unset !important
+}
+
+.wp-element-button:hover {
+	background-color: var(--wp--preset--color--primary) !important;
+	color: black;
+}
+
+.primary-menu .sub-menu {
+		border-color: var(--wp--preset--color--primary) !important;
+	border-width: 2px;
+	border-style: solid;
+	color: black;
+ 	background-color: white !important 
+}
+
+.primary-menu .menu-item>a {
+	color: black !important;
+}
+
+.primary-menu .menu-item>a:hover {
+		background-color: var(--wp--preset--color--primary) !important;
+	color: black !important;
+}
+
+.footer-menu .menu-item > a:hover {
+			background-color: var(--wp--preset--color--primary) !important;
+	color: black !important;
+}
+
+.header__search-toggle .screen-reader-text {
+	color: black !important;
+}
+
+label {
+	color: black !important;
+}
+
+
+/* Inclusion ENDE */
+
+
+
 @media only screen and (min-width: 768px) {
   .frontsiteContainer {
     background-image: url("/wp-content/uploads/2022/07/Erifindergeist-Juelich-Vorbilder-01-01-scaled.jpg");
