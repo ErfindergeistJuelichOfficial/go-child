@@ -20,7 +20,7 @@ jobs:
         server: erfindergeist.org
         username: ${{ secrets.FTP_USERNAME_TEST }}
         password: ${{ secrets.FTP_PASSWORD_TEST }}
-        local-dir: ./dist/
+        local-dir: ./
         protocol: ftps
         state-name: .ftp-deploy-sync-go-child-theme-state.json
-        exclude: |
+        exclude: ./github
