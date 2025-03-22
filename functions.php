@@ -1,5 +1,7 @@
 <?php
 
+include_once 'disable-emojis.php';
+
 // we need this to load the parent styles
 // https://developer.wordpress.org/themes/advanced-topics/child-themes/
 function theme_enqueue_styles()
