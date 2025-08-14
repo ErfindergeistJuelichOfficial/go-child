@@ -24,3 +24,12 @@ function theme_enqueue_styles()
    );
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
+
+function mobilitaetstag_redirect_function() {
+    if (is_page('mobilitaetstag')) {
+        wp_redirect( home_url('/2025/08/13/mobilitaetstag-2025/'), 301 );
+        exit;
+    }
+}
+add_action('template_redirect', 'mobilitaetstag_redirect_function');
+
