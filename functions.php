@@ -1,7 +1,5 @@
 <?php
 
-//  include_once 'disable-emojis.php';
-
 // we need this to load the parent styles
 // https://developer.wordpress.org/themes/advanced-topics/child-themes/
 function theme_enqueue_styles()
@@ -32,4 +30,8 @@ function mobilitaetstag_redirect_function() {
     }
 }
 add_action('template_redirect', 'mobilitaetstag_redirect_function');
+
+
+// disable xmlrpc
+add_filter( 'xmlrpc_enabled', '__return_false' );
 
