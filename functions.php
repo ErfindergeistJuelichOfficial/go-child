@@ -27,7 +27,7 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
 function mobilitaetstag_redirect_function() {
     if (is_page('mobilitaetstag')) {
-        wp_redirect( home_url('/2025/08/13/mobilitaetstag-2025/'), 301 );
+        wp_redirect( home_url('/2025/09/21/rueckblick-mobilitaetstag-2025/'), 301 );
         exit;
     }
 }
