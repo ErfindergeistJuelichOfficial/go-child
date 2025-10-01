@@ -45,7 +45,7 @@ function handy_recycling_function() {
         exit;
     }
 }
-add_action('template_redirect', 'end_of_ten_redirect_function');
+add_action('template_redirect', 'handy_recycling_function');
 
 // disable xmlrpc
 add_filter( 'xmlrpc_enabled', '__return_false' );
