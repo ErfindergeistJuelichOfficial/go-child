@@ -23,29 +23,23 @@ function theme_enqueue_styles()
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
-function mobilitaetstag_redirect_function() {
+function egj_redirect_function() {
     if (is_page('mobilitaetstag')) {
         wp_redirect( home_url('/2025/09/21/rueckblick-mobilitaetstag-2025/'), 301 );
         exit;
     }
-}
-add_action('template_redirect', 'mobilitaetstag_redirect_function');
 
-function end_of_ten_redirect_function() {
     if (is_page('endof10')) {
         wp_redirect( home_url('/2025/09/30/end-of-10-veranstaltungsreihe-umstieg-auf-linux/'), 301 );
         exit;
     }
-}
-add_action('template_redirect', 'end_of_ten_redirect_function');
 
-function handy_recycling_function() {
     if (is_page('handyrecycling')) {
         wp_redirect( home_url('/2025/10/01/handy-recycling-bei-uns/'), 301 );
         exit;
     }
 }
-add_action('template_redirect', 'handy_recycling_function');
+add_action('template_redirect', 'egj_redirect_function');
 
 // disable xmlrpc
 add_filter( 'xmlrpc_enabled', '__return_false' );
