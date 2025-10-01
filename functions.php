@@ -24,13 +24,15 @@ function theme_enqueue_styles()
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
 function egj_redirect_function() {
-    if (is_page('mobilitaetstag')) {
-        wp_redirect( home_url('/2025/09/21/rueckblick-mobilitaetstag-2025/'), 301 );
+  
+    if (is_page('endoften')) {
+        wp_redirect( home_url('/2025/09/30/end-of-10-veranstaltungsreihe-umstieg-auf-linux/'), 301 );
         exit;
     }
 
-    if (is_page('endof10')) {
-        wp_redirect( home_url('/2025/09/30/end-of-10-veranstaltungsreihe-umstieg-auf-linux/'), 301 );
+
+    if (is_page('mobilitaetstag')) {
+        wp_redirect( home_url('/2025/09/21/rueckblick-mobilitaetstag-2025/'), 301 );
         exit;
     }
 
