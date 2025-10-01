@@ -31,6 +31,21 @@ function mobilitaetstag_redirect_function() {
 }
 add_action('template_redirect', 'mobilitaetstag_redirect_function');
 
+function end_of_ten_redirect_function() {
+    if (is_page('end_of_10')) {
+        wp_redirect( home_url('/2025/09/30/end-of-10-veranstaltungsreihe-umstieg-auf-linux/'), 301 );
+        exit;
+    }
+}
+add_action('template_redirect', 'end_of_ten_redirect_function');
+
+function handy_recycling_function() {
+    if (is_page('handy_recycling')) {
+        wp_redirect( home_url('/2025/10/01/handy-recycling-bei-uns/'), 301 );
+        exit;
+    }
+}
+add_action('template_redirect', 'end_of_ten_redirect_function');
 
 // disable xmlrpc
 add_filter( 'xmlrpc_enabled', '__return_false' );
