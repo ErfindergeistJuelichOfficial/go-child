@@ -34,6 +34,9 @@ h5 {
   color: var(--egj-black);
 }
 
+input[type=checkbox] {
+  opacity: unset;
+}
 wp-block-latest-posts__post-title {
   color: var(--egj-black);
 }
