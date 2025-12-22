@@ -34,8 +34,8 @@ h5 {
   color: var(--egj-black);
 }
 
-#altcha-checkbox input {
-  opacity: unset !important;
+.altcha-checkbox input[type=checkbox],input[type=radio] {
+  opacity: 1 !important;
 }
 
 wp-block-latest-posts__post-title {
